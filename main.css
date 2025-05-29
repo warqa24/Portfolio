@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Faster+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Lobster&family=Oswald:wght@200..700&family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shojumaru&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background: #1f242d;
+	background-size: 400% 400%;
+	height: 100%;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+.home {
+    
+    background: #1f242d;
+	background-size: 400% 400%;
+	height: 100%;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+span{
+    color: aqua;
+}
+
+p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+main h1 {
+    font-family: "Lobster";
+    text-shadow: 3px 3px 3px #7D8CC4;
+
+}
+
+.intro {
+    font-weight: bold;
+    padding: 0;
+    margin: 10px;
+}
+
+/* Navigation Style */
+.main-nav { 
+    grid-area: nav;
+    padding: 1em;
+    align-items: center;
+    /*css-box-shadow-examples*/
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    background: linear-gradient(-45deg, #273E47, #313E50, #455561, #3A405A);
+    
+}
+
+
+.main-nav ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 1em;
+    margin: 0;
+    width: 110%;
+    
+}
+
+.main-nav a{
+    text-decoration: none;
+    font-family: "Work Sans";
+    color: #D1D5DE;
+}
+
+
+
+aside {
+    grid-area: aside;
+    padding: 0;
+    align-items: center;
+}
+
+main {
+    grid-area: main;
+}
+
+/* Footer Style */
+
+footer {
+    grid-area: footer;
+    padding: 1em;
+    align-items: center;
+    /*css-box-shadow-examples*/
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    background: linear-gradient(-45deg, #273E47, #313E50, #455561, #3A405A);
+    margin-top: 3em;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 3vw;
+    background: none;
+    box-shadow: none;
+    font-size: 15px;
+    margin-top: 1em;
+    
+}
+
+.footer-nav a{
+    text-decoration: none;
+    font-family: "Work Sans";
+    color: #D1D5DE;
+}
+
+.footer-nav a:hover{
+    transform: none;
+    font-size: 15px;
+    transition: none;
+    text-decoration: underline;
+}
+
+
+footer p{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 1em;
+}
+
+footer div{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 13px;
+    background: none;
+}
+
+footer a{
+    color: white;
+}
+
+footer div a:hover{
+    color: #3A405A;
+}
+
+/* Header Style */
+header{
+    grid-area: header;
+    font-family: Shojumaru;
+    text-align: center;
+    color: #fff;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    padding: 10px;
+}
+
+header h1{
+    padding: 0;
+    display: inline;
+}
+
+
+/* Styling Projects */
+.project div{
+    /*css-box-shadow-examples*/
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    padding: 1em;
+    text-align: center;
+    
+}
+
+.project img{
+    width: 75%;
+    height: auto;
+}
+
+.project h2{
+    margin-bottom: 0.5em;
+    color: white;
+}
+
+.project p{
+    margin-bottom: 1em;
+    text-align: left;
+    color: white;
+}
+
+/* Styling contact page */
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+.contact h2{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 1em;
+}
+
+.contact form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+    background: #323946;
+    /*css-box-shadow-examples*/
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 1.2em;
+}
+
+.contact label{
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact input{
+    width: 100%;
+    padding: 10px;
+    margin: 10px auto;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+
+.contact-details label{
+    width: auto;
+}
+
+
+.contact textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 10px auto;
+    box-sizing: border-box;
+    height: 15vh;
+}
+
+
+.button-group {
+    display: flex;
+
+}
+.button, .skill a{
+    display: block;
+    border: 1px solid white;
+    color: white;
+    background: #224870;
+    margin-top: 3em;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 0.25em;
+    text-align: center;
+    width: 20%;
+    text-decoration: none;
+}
+
+.skill a {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button:hover{
+    background: #4169E1;
+    cursor: pointer;
+    color: black;
+}
+
+input[type="submit"]:hover{
+    border: 2px solid #111D4A;
+}
+
+
+.slider-container {
+    position: relative;
+    width: 50%;
+    max-width: 800px;
+    margin-top: 3em;
+    margin-left: 2em;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.slider {
+    display: flex;
+    width: 400%;
+    animation: slide 20s infinite;
+}
+
+.slider img {
+    width: 25%;
+    flex-shrink: 0;
+}
+
+/* Pure CSS Gradient Background Animation*/
+
+@keyframes slide {
+    0% {transform: translateX(0);}
+    20% {transform: translateX(0);}
+    25% {transform: translateX(-25%);}
+    45% {transform: translateX(-25%);}
+    50% {transform: translateX(-50%);}
+    70% {transform: translateX(-50%);}
+    75% {transform: translateX(-75%);}
+    95% {transform: translateX(-75%);}
+    100% {transform: translateX(0);}
+}
+
+.view-all-btn {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #0077ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.skills-container .skill {
+    flex: 1 1 30em;
+    background: #323946;
+    padding: 3em 2em 4em;
+    border-radius: 2em;
+    border: 0.2em solid #1f242d;
+    transition: 0.5s ease;
+}
+
+.skill i {
+    font-size: 5em;
+    color: #0ef;
+    display: flex;
+    justify-content: center;
+}
+
+.skill h2 {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+.skills-container .skill:hover {
+    border-color: #0ef;
+    transform: scale(1.02);
+}

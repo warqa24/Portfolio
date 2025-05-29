@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 800px)">
+    <link rel="stylesheet" href="desktop.css" media="screen and (min-width: 800px)">
+    <script src="https://kit.fontawesome.com/7e6c94de81.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="Images/logo.png" type="image/x-icon">
+</head>
+
+<body id="clicked">
+
+    <div class="hamburger">
+        <a href="#clicked" class="on showNav"></a>
+        <a href="#" class="off showNav"></a>
+    </div>
+
+    <header>
+        <h1>Contact Me</h1>
+    </header>
+
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="project.html">Project</a>
+                <ul>
+                    <li><a href="project.html#project1">Project 1</a></li>
+                    <li><a href="project.html#project2">Project 2</a></li>
+                    <li><a href="project.html#project3">Project 3</a></li>
+                    <li><a href="project.html#project4">Project 4</a></li>
+                </ul>
+            </li>
+
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="contact">
+        <form action="mailto:warqa.binnofal24@my.northampton.ac.uk" method="get">
+            <h2>Get in touch</h2>
+            <label for="name">Full Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter Your Name" required>
+
+            <div class="contact-details">
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter Your Email" required>
+                </div>
+
+                <div>
+                    <label for="phone_number">Phone</label>
+                    <input type="tel" name="phone" id="phone_number" placeholder="Enter Phone Number" required>
+
+                </div>
+            </div>
+
+            <label for="subject_line">Subject Line</label>
+            <input type="text" name="subject" id="subject_line" placeholder="Enter Your Subject" required>
+
+            <label for="textarea">Message</label>
+            <textarea name="textarea" id="textarea" placeholder="Your message here..." required></textarea>
+
+            <input type="submit" value="submit">
+        </form>
+
+    </main>
+
+    <footer class="contact-footer">
+        <div>
+            <a href="https://github.com/CSY1063/as1-warqa24" target="_blank">
+                <i class="fa-brands fa-square-github"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/warqa-bin-nofal-54b370342/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+            <a href="https://discordapp.com/users/1342537964076535828" target="_blank">
+                <i class="fa-brands fa-discord"></i>
+            </a>
+        </div>
+
+        <nav class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="project.html">Project</a>
+            <a href="skills.html">Skills</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <p>&copy; Warqa Bin Nofal 2025</p>
+    </footer>
+
+</body>
+
+</html>
