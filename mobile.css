@@ -1,20 +1,20 @@
-body{
+body {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: auto 1fr auto;
-    grid-template-areas: 
+    grid-template-areas:
         "header"
         "main"
         "footer";
-    
-        height: 100vh;
+
+    height: 100vh;
 }
 
-.home{
+.home {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: auto 1fr auto;
-    grid-template-areas: 
+    grid-template-areas:
         "header"
         "main"
         "aside"
@@ -22,11 +22,11 @@ body{
     height: 100vh;
 }
 
-header{
+header {
     padding: 1em;
 }
 
-.main-nav{
+.main-nav {
     position: fixed;
     top: 0;
     right: 0;
@@ -38,53 +38,56 @@ header{
     padding: 0;
 }
 
-#clicked:target .main-nav{
-    transform: translate(0,0);
+#clicked:target .main-nav {
+    transform: translate(0, 0);
 }
 
-.main-nav ul{
+.main-nav ul {
     display: flex;
     flex-direction: column;
     padding: 0;
     margin: 0;
 }
 
-.main-nav ul li{
+.main-nav ul li {
     font-size: 25px;
     border-bottom: 3px solid black;
 }
 
-.main-nav ul ul{
+.main-nav ul ul {
     display: none;
 }
 
-.main-nav a{
+.main-nav a {
     position: relative;
     left: 15px;
     bottom: 12px;
 }
 
-body:target .main-nav{
+body:target .main-nav {
+    display: block;
+    background: #313E50;
+    z-index: 1;
+}
+
+
+body .on {
     display: block;
 }
 
-body .on{
-    display: block;
-}
-
-body .off{
+body .off {
     display: none;
 }
 
-body:target .on{
+body:target .on {
     display: none;
 }
 
-body:target .off{
+body:target .off {
     display: block;
 }
 
-.showNav{
+.showNav {
     display: flex;
     width: 1.25em;
     height: 0.8em;
@@ -93,7 +96,7 @@ body:target .off{
     margin-left: 1em;
 }
 
-.showNav:before{
+.showNav:before {
     content: '';
     position: absolute;
     width: 1.25em;
@@ -101,35 +104,36 @@ body:target .off{
     border-top: 0.2em solid #fff;
 }
 
-.hamburger{
+.hamburger {
     position: fixed;
     top: 0;
-    left: 0; /*make it right to make nav on right side*/
+    left: 0;
+    /*make it right to make nav on right side*/
     margin-top: 1em;
     width: 1em;
     height: 1em;
-    
+
 }
 
-.main-nav ul li:nth-child(odd){
+.main-nav ul li:nth-child(odd) {
     padding-top: 1em;
 
 }
 
-.main-nav ul li:nth-child(even){
+.main-nav ul li:nth-child(even) {
     padding-top: 1em;
     background: #202C39;
 }
 
-.contact form{
+.contact form {
     width: 90vw;
     height: auto;
 }
 
-.contact-details{
+.contact-details {
     display: flex;
     flex-direction: column;
-    
+
 }
 
 
@@ -140,17 +144,17 @@ body:target .off{
 }
 
 
-.project{
+.project {
     display: flex;
     flex-direction: column;
     gap: 4em;
 }
 
-.my-projects:nth-child(even){
+.my-projects:nth-child(even) {
     background: #151E3F;
 }
 
-.my-projects:nth-child(odd){
+.my-projects:nth-child(odd) {
     background: #1F487E;
 }
 
@@ -158,15 +162,15 @@ body:target .off{
     background: #1F487E;
 }
 
-.my-projects:nth-child(odd) .content{
+.my-projects:nth-child(odd) .content {
     background: #151E3F;
 }
 
-.button{
+.button {
     width: 30%;
 }
 
-aside img{
+aside img {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -175,16 +179,17 @@ aside img{
     height: 100%;
 }
 
-.text, .intro{
+.text,
+.intro {
     margin-left: 1em;
 }
 
 
-.skill a{
+.skill a {
     width: 40%;
 }
 
-.content a{
+.content a {
     text-decoration: none;
     border-radius: 50px;
     border: 1px solid blue;

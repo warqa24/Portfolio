@@ -2,7 +2,7 @@ body {
     display: grid;
     grid-template-columns: 15% 1fr 15%;
     grid-template-rows: auto;
-    grid-template-areas: 
+    grid-template-areas:
         "nav nav nav"
         "header header header"
         ". main ."
@@ -13,7 +13,7 @@ body {
     display: grid;
     grid-template-columns: 60% 40%;
     grid-template-rows: auto;
-    grid-template-areas: 
+    grid-template-areas:
         "nav nav"
         "header header"
         "main aside"
@@ -22,19 +22,35 @@ body {
 
 
 /* Navigation Style */
-.main-nav a:hover{
-    transform: translateY(-5px);
-    font-size: 1.2em;
-    transition: font-size 0.2s ease, transform 0.2s ease;
-    text-decoration: underline;
-    color: #BA274A;
+.main-nav {
+    /* From https://css.glass */
+    background: rgba(199, 198, 203, 0.12);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(11.8px);
+    -webkit-backdrop-filter: blur(11.8px);
+    border: 1px solid rgba(199, 198, 203, 0.2);
 }
 
-.main-nav > ul > li{
-    position: relative;
-    width: 100%;
-    
+.main-nav a {
+    border-bottom: 2px solid transparent;
+    transition: 0.3s;
+
 }
+
+.main-nav a:hover {
+    transform: translateY(-5px);
+    font-size: 1.2em;
+    /* transition: font-size 0.2s ease, transform 0.2s ease; */
+    transition: 0.3s;
+    border-bottom: 2px solid white;
+    color: rgb(0, 17, 255);
+}
+
+
+.main-nav>ul>li {
+    position: relative;
+}
+
 .main-nav ul ul {
     position: absolute;
     display: block;
@@ -42,12 +58,13 @@ body {
     background-color: #197BBD;
     padding: 0;
     opacity: 0;
-    width: 100%;
-    transition: opacity 0.5s ease-in; 
+    width: 200px;
+    transition: opacity 0.5s ease-in;
     pointer-events: none;
     text-align: center;
-    right: 40%;
-    top: 100%;
+    top: 25px;
+    right: 50%;
+    transform: translateX(50%);
 }
 
 .main-nav>ul>li:hover ul {
@@ -57,14 +74,14 @@ body {
 
 .main-nav ul ul li:hover {
     background-color: red;
-    
+
 }
 
-.main-nav ul ul li a:hover{
+.main-nav ul ul li a:hover {
     color: white;
 }
 
-.contact-details{
+.contact-details {
     display: flex;
     justify-content: space-between;
     gap: 10px;
@@ -74,19 +91,20 @@ main {
     margin: 1em;
 }
 
-p.text, p.intro{
+p.text,
+p.intro {
     margin-left: 3em;
 }
 
-h1.intro{
+h1.intro {
     margin-left: 2em;
 }
 
-.button{
+.button {
     margin-left: 3em;
 }
 
-aside img{
+aside img {
     margin-left: 4em;
 }
 
@@ -107,11 +125,13 @@ aside img{
 }
 
 
-.project div:nth-child(2), .project div:nth-child(3) {
+/* .project div:nth-child(2),
+.project div:nth-child(3) {
     background: #151E3F;
 }
 
-.project div:nth-child(1), .project div:nth-child(4) {
+.project div:nth-child(1),
+.project div:nth-child(4) {
     background: #1F487E;
 }
 
@@ -123,9 +143,18 @@ aside img{
 .my-projects:nth-child(2):hover .content,
 .my-projects:nth-child(3):hover .content {
     background: #151E3F;
+} */
+
+.project div {
+    /* From https://css.glass */
+    background: rgba(145, 141, 141, 0.05);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(145, 141, 141, 0.3);
 }
 
-aside img{
+
+aside img {
     width: 50%;
     height: 50%;
 }
@@ -134,7 +163,7 @@ aside img{
     border: 1px solid black;
     height: 350px;
     width: 350px;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
     position: relative;
     border-radius: 10px;
     overflow: hidden;
@@ -163,7 +192,7 @@ aside img{
 
 .content {
     text-align: center;
-    padding: 80px 20px;
+    padding: 20px 15px;
     width: 100%;
     height: 100%;
     box-sizing: border-box;
@@ -171,9 +200,10 @@ aside img{
     transition: transform 1s ease-in-out;
     z-index: 1;
     position: absolute;
-    top: 100%;
+    top: 0;
     left: 0;
-    bottom: 0;
+    overflow: auto;
+    
 }
 
 .content a {
@@ -187,11 +217,10 @@ aside img{
 }
 
 .my-projects:hover .content {
-    transform: translateY(-100%);
+    transform: translateY(0);
 }
 
 .content p {
     padding: 0;
-    margin: 0;
-    margin-top: 1em;
+    margin: 0.5em 0;
 }
