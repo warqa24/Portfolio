@@ -205,10 +205,13 @@ header{
     display: flex;
     flex-direction: column;
     row-gap: 4px;
-    background: #323946;
-    /*css-box-shadow-examples*/
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     border-radius: 1.2em;
+    background: rgba(199, 198, 203, 0.12);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(11.8px);
+    -webkit-backdrop-filter: blur(11.8px);
+    border: 1px solid rgba(199, 198, 203, 0.2);
+
 }
 
 .contact label{
@@ -333,11 +336,15 @@ input[type="submit"]:hover{
 
 .skills-container .skill {
     flex: 1 1 30em;
-    background: #323946;
     padding: 3em 2em 4em;
     border-radius: 2em;
-    border: 0.2em solid #1f242d;
     transition: 0.5s ease;
+    background: rgba(199, 198, 203, 0.12);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(11.8px);
+    -webkit-backdrop-filter: blur(11.8px);
+    border: 1px solid rgba(199, 198, 203, 0.2);
+
 }
 
 .skill i {

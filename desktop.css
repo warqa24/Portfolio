@@ -42,7 +42,6 @@ body {
     font-size: 1.2em;
     /* transition: font-size 0.2s ease, transform 0.2s ease; */
     transition: 0.3s;
-    border-bottom: 2px solid white;
     color: rgb(0, 17, 255);
 }
 
