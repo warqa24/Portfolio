@@ -36,6 +36,8 @@ header {
     transform: translate(100%, 0);
     transition: transform 0.5s ease-in-out;
     padding: 0;
+    background: #313E50;
+    z-index: 1;
 }
 
 #clicked:target .main-nav {
@@ -112,6 +114,7 @@ body:target .off {
     margin-top: 1em;
     width: 1em;
     height: 1em;
+    z-index: 2;
 
 }
 
