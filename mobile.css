@@ -175,6 +175,7 @@ body:target .off {
 
 .button {
     width: 30%;
+    margin-left: 1.5em;
 }
 
 aside img {
