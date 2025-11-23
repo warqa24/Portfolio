@@ -215,12 +215,13 @@ header{
 }
 
 .contact label{
+    padding-left: 0.75em;
     margin-bottom: 5px;
     font-weight: bold;
 }
 
 .contact input{
-    width: 100%;
+    width: 96%;
     padding: 10px;
     margin: 10px auto;
     border: 1px solid #ccc;
@@ -236,11 +237,12 @@ header{
 
 
 .contact textarea{
-    width: 100%;
+    width: 96%;
     padding: 10px;
     margin: 10px auto;
     box-sizing: border-box;
     height: 15vh;
+    border-radius: 4px;
 }
 
 

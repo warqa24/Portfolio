@@ -143,6 +143,10 @@ body:target .off {
     margin-top: 1em;
 }
 
+#email, #phone_number {
+    margin-left: 7px;
+}
+
 
 .project {
     display: flex;
